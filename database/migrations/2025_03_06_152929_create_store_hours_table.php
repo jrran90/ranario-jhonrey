@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('store_hours', function (Blueprint $table) {
             $table->id();
-            $table->integer('day_of_week'); // 0=Monday; 1=Tuesday, etc.
+            $table->integer('day_of_week'); // 0=Sunday; 1=Monday, etc.
             $table->time('open_time');
             $table->time('close_time');
             $table->boolean('is_open')->default(true);
