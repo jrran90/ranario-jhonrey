@@ -6,6 +6,12 @@ Install dependencies
 composer install && npm i
 ```
 
+Setup config
+```shell
+cp .env.example .env
+```
+> **Note:** Update accordingly the DB credentials in `.env`
+
 Run migration & seeder
 
 ```shell
